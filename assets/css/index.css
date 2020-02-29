@@ -1,0 +1,55 @@
+.iconfont {
+    margin-right: 8px;
+}
+
+.layui-nav-item a {
+    font-size: 12px;
+}
+
+.layui-icon {
+    margin-left: 15px;
+    margin-right: 8px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+.layui-footer {
+    text-align: center;
+}
+
+.touxiang {
+
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+
+    user-select: none;
+}
+
+.touxiang .layui-nav-img {
+    width: 40px;
+    height: 40px;
+}
+
+.touxiang2 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.wecolme {
+    font-size: 12px;
+}
