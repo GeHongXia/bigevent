@@ -39,7 +39,7 @@ iframe {
     height: 40px;
 }
 
-.touxiang2 {
+/* .touxiang2 {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -48,6 +48,24 @@ iframe {
     text-align: center;
     line-height: 40px;
 
+
+
+} */
+
+
+.text-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 5px;
+    margin-right: 8px;
 }
 
 .wecolme {

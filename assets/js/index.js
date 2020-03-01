@@ -31,7 +31,8 @@ function fn1() {
                 return layui.layer.msg('获取用户信息失败！')
             }
 
-            fn2(res.data);
+            renderAvatar(res.data);
+            console.log(res);
         }
 
 
@@ -39,21 +40,24 @@ function fn1() {
 }
 
 
-function fn2(data) {
-
-    var uname = data.nickname || data.username;
-    $('.wecolme').html('欢迎&nbsp;&nbsp;' + uname)
-    if (data.user_pic) {
-        $('.layui-nav-img').show().prop('src', data.user_pic);
-        $('.touxiang2').hide()
+function renderAvatar(user) {
+    // 获取用户的名称
+    var name = user.nickname || user.username
+    // 1. 设置欢迎的文本
+    $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
+    // 2. 按需渲染头像
+    if (user.user_pic) {
+        // 渲染图片的头像
+        $('.layui-nav-img').attr('src', user.user_pic).show()
+        $('.text-avatar').hide()
     } else {
-        $('.layui-nav-img').hide();
-        var first = uname[0].toUpperCase()
-        $('.touxiang2').show().text(first)
+        // 渲染文本的头像
+        $('.layui-nav-img').hide()
+        // 获取用户名的第一个字符串
+        var first = name[0].toUpperCase()
+        $('.text-avatar').html(first).show()
     }
-
 }
-
 
 
 
